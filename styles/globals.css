@@ -169,9 +169,7 @@ li {
     transform: skewY(60deg) rotate(12deg);
     padding-top: 5px;
     font-size: 8px !important;
-    font-family: "Roboto";
-    font-style: normal;
-    color: #000;
+   
   }
   
 li:first-child {
