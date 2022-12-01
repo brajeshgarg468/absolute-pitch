@@ -15,15 +15,13 @@ const useStyles = makeStyles({
   },
 
   mainCircle: {
-    // background: '#903884 !important',
-    // borderRadius: '50%',
+    
     width: "350px",
     height: "350px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    // marginLeft: "125px",
-    // marginTop: "-25px",
+   
     "@media (min-width: 1280px) and (max-width:1680px)": {
       // marginLeft: '235px',
       // marginTop: '100px',
@@ -59,10 +57,7 @@ const useStyles = makeStyles({
     borderRadius: "50%",
     listStyle: "none",
     overflow: "hidden",
-    // zIndex: "99",
-    /* margin-top: 3%,
-            margin-left: 3%, */
-    // transform: 'rotate(50deg)'
+    
   },
 
   circle2: {
@@ -98,8 +93,7 @@ const useStyles = makeStyles({
   },
 
   circle4: {
-    // marginTop: "26%",
-    // marginLeft: "26%",
+   
     width: "60px",
     height: "60px",
     borderRadius: "50%",
@@ -183,13 +177,10 @@ const useStyles = makeStyles({
     marginLeft: "40%",
   },
   circleCard: {
-    // display:'flex',
-    // alignItems:'center',
-    // boxShadow: "6px 4px 2px #403b3bd9",
+   
     background: "#333 !important",
     borderRadius: "10px",
-    // padding: "20px",
-    // margin: "15px 15px 15px 25px !important",
+   
     height: "80vh",
     "@media (min-width: 1280px) and (max-width:1680px)": {},
     "@media (min-width: 600px) and (max-width:768px)": {
@@ -207,19 +198,15 @@ const useStyles = makeStyles({
     background: "#0082cf",
     color: "white",
   },
-  // topButtonContainer: {
-  //   marginTop: "10px",
-  //   marginBottom: "10px",
-  //   justifyContent: "left",
-  //   alignItems: "left",
-  //   display: "flex",
-  // },
+ 
   topButtonContainer1: {
     marginTop: "10px",
     marginBottom: "10px",
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
+    textAlign:'center',
+    padding:'0px 10px'
   },
   topButtonContainer2: {
     marginTop: "10px",
@@ -231,23 +218,55 @@ const useStyles = makeStyles({
   topButtons: {
     fontSize: "16px",
     fontWeight: "500",
-    width: "70%",
+    width: "90%",
     padding: "2px",
     cursor: "pointer",
     padding: "10px",
-    transform: "rotate(-30deg) skew(25deg) tanslate(20px,-15px)",
+    justifyContent:'center',
+    alignContent:'center',
+    display:'flex',
+    background:'#fff',
     "&:hover": {
       border: "2px solid lightblue",
       transform: `rotate(-30deg) skew(25deg) tanslate(20px,-15px)`,
       boxShadow: "-10px 10px 10px gray",
     },
-    "&:before": {
-      transform: "0.5s",
-      transform: "rotate(20deg)skewY(-45deg)",
+  },
+  resetButtons: {
+    fontSize: "16px",
+    fontWeight: "500",
+    width: "90%",
+    padding: "2px",
+    cursor: "pointer",
+    padding: "10px",
+    justifyContent:'center',
+    alignContent:'center',
+    display:'flex',
+    background:'#82E3F4',
+    color:'white',
+    "&:hover": {
+      border: "2px solid lightblue",
+      transform: `rotate(-30deg) skew(25deg) tanslate(20px,-15px)`,
+      boxShadow: "-10px 10px 10px gray",
     },
-    "&:after": {
-      transform: "0.5s",
-      transform: "rotate(10deg)skewX(-45deg)",
+  },
+  activeKey: {
+    fontSize: "16px",
+    fontWeight: "500",
+    width: "90%",
+    padding: "2px",
+    cursor: "pointer",
+    padding: "10px",
+    justifyContent:'center',
+    alignContent:'center',
+    display:'flex',
+    background:'blue',
+    color:'white',
+    transform: "rotate(-30deg) skew(25deg) tanslate(20px,-15px)",
+    "&:hover": {
+      border: "2px solid lightblue",
+      transform: `rotate(-30deg) skew(25deg) tanslate(20px,-15px)`,
+      boxShadow: "-10px 10px 10px gray",
     },
   },
 
@@ -315,6 +334,7 @@ const useStyles = makeStyles({
   playerBtn: {
     cursor: "pointer",
     fontSize: "25px",
+    color:'white',
     "&:hover": {
       color: "yellow",
     },
